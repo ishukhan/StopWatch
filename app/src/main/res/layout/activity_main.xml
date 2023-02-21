@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="409dp"
+        android:layout_height="497dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints,UselessLeaf,TextSizeCheck"
+        tools:layout_editor_absoluteY="102dp">
+
+
+        <TextView
+            android:id="@+id/tvTimer"
+            android:layout_width="295dp"
+            android:layout_height="252dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="38dp"
+            android:layout_marginEnd="65dp"
+            android:background="@drawable/rounded_background"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="00:00:00"
+            android:textColor="@color/colorPrimary"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,SpUsage,TextContrastCheck" />
+
+        <Button
+            android:id="@+id/btStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTimer"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="92dp"
+            android:layout_marginBottom="61dp"
+            android:background="@drawable/rounded_corner"
+            android:minHeight="48dp"
+            android:text="Start"
+            tools:ignore="HardcodedText,RtlHardcoded,TextContrastCheck,VisualLintOverlap,TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/btPause"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:layout_below="@+id/tvTimer"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="92dp"
+            android:layout_marginBottom="61dp"
+            android:layout_toEndOf="@+id/btStart"
+            android:background="@drawable/rounded_corner"
+            android:text="Pause"
+            tools:ignore="HardcodedText,TextContrastCheck,TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/btReset"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_below="@+id/tvTimer"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="92dp"
+            android:layout_marginEnd="29dp"
+            android:layout_marginBottom="61dp"
+            android:layout_toEndOf="@+id/btPause"
+            android:background="@drawable/rounded_corner"
+            android:text="Reset"
+            tools:ignore="HardcodedText,TextContrastCheck,TouchTargetSizeCheck" />
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

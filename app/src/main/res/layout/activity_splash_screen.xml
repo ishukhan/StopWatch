@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.co/apk/res/android"
+    xmlns:android2="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android2:layout_width="match_parent"
+    android2:layout_height="match_parent"
+    android2:gravity="center"
+    android2:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".Splash_Screen"
+    tools:ignore="ExtraText,MissingPrefix,NamespaceTypo,UseCompoundDrawables">
+
+    <ImageView
+        android2:layout_width="200dp"
+        android2:layout_height="200dp"
+        android2:src="@drawable/clock2"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android2:textAlignment="center"
+        android2:layout_width="wrap_content"
+        android2:layout_height="wrap_content"
+        android2:layout_marginTop="3dp"
+        android2:capitalize="characters"
+        android2:fontFamily="cursive"
+        android2:freezesText="true"
+        android2:gravity="center"
+        android2:text="Stop Watch\n Ishu"
+        android2:textColor="@color/colorPrimary"
+        android2:textSize="32sp"
+        android2:textStyle="bold"
+        android:id="@+id/tv_text"
+        tools:ignore="Deprecated,HardcodedText,TextViewEdits,TextContrastCheck" />
+
+</LinearLayout>
